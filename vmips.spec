@@ -49,5 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README 
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/vmipsrc
+%{_includedir}/%{name}
+%{_datadir}/%{name}
 %{_mandir}/*/vmips* 
 %{_infodir}/vmips*
