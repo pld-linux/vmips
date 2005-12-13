@@ -5,7 +5,7 @@ Version:	1.3.1
 Release:	1
 License:	GPL
 Group:		Applications/Emulators
-Source0:	http://vmips.sourceforge.net/releases/vmips-%{version}/%{name}-%{version}.tar.gz
+Source0:	http://vmips.sourceforge.net/releases/%{name}-%{version}/vmips-%{version}.tar.gz
 # Source0-md5:	882776097824ed5fe9eaf28220daceca
 URL:		http://vmips.sourceforge.net/
 BuildRequires:	autoconf
@@ -23,7 +23,7 @@ RISC MIPS R3000. Jest to projekt z otwartymi ¼ród³ami napisany w GNU
 C++ i jest rozpowszechniany na licencji GNU GPL.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 #%%{__gettextize}
@@ -45,10 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README 
+%doc ChangeLog README
 %attr(755,root,root) %{_bindir}/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/vmipsrc
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/vmipsrc
 %{_includedir}/%{name}
 %{_datadir}/%{name}
-%{_mandir}/*/vmips* 
+%{_mandir}/*/vmips*
 %{_infodir}/vmips*
