@@ -1,5 +1,5 @@
 Summary:	Virtual machine simulator based on a MIPS R3000 processor
-Summary(pl.UTF-8):   Symulator maszyny wirtualnej opartej na procesorze MIPS R3000
+Summary(pl.UTF-8):	Symulator maszyny wirtualnej opartej na procesorze MIPS R3000
 Name:		vmips
 Version:	1.3.1
 Release:	1
