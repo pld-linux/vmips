@@ -1,5 +1,5 @@
 Summary:	Virtual machine simulator based on a MIPS R3000 processor
-Summary(pl):	Symulator maszyny wirtualnej opartej na procesorze MIPS R3000
+Summary(pl.UTF-8):   Symulator maszyny wirtualnej opartej na procesorze MIPS R3000
 Name:		vmips
 Version:	1.3.1
 Release:	1
@@ -17,9 +17,9 @@ Vmips is a virtual machine simulator based around a MIPS R3000 RISC
 CPU core. It is an open-source project written in GNU C++ and which is
 distributed under the GNU General Public License.
 
-%description -l pl
+%description -l pl.UTF-8
 Vmips to symulator maszyny wirtualnej opartej na rdzeniu procesora
-RISC MIPS R3000. Jest to projekt z otwartymi ºrÛd≥ami napisany w GNU
+RISC MIPS R3000. Jest to projekt z otwartymi ≈∫r√≥d≈Çami napisany w GNU
 C++ i jest rozpowszechniany na licencji GNU GPL.
 
 %prep
