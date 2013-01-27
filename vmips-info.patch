@@ -1,0 +1,14 @@
+--- vmips-1.4/doc/vmips.texi.orig	2012-01-29 08:58:54.000000000 +0100
++++ vmips-1.4/doc/vmips.texi	2013-01-27 13:29:17.070249924 +0100
+@@ -6,9 +6,9 @@
+ @syncodeindex fn cp
+ @syncodeindex pg cp
+ 
+-@dircategory Development
++@dircategory Software development:
+ @direntry
+-* VMIPS: (vmips).                A MIPS R3000 simulator.
++* VMIPS: (vmips).			A MIPS R3000 simulator
+ @end direntry
+ 
+ @ifinfo

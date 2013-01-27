@@ -1,15 +1,20 @@
 Summary:	Virtual machine simulator based on a MIPS R3000 processor
 Summary(pl.UTF-8):	Symulator maszyny wirtualnej opartej na procesorze MIPS R3000
 Name:		vmips
-Version:	1.3.1
+Version:	1.4
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Applications/Emulators
 Source0:	http://vmips.sourceforge.net/releases/%{name}-%{version}/vmips-%{version}.tar.gz
-# Source0-md5:	882776097824ed5fe9eaf28220daceca
+# Source0-md5:	3ca24f11d61d3f0e8d92dd8a352029d4
+Patch0:		%{name}-am.patch
+Patch1:		%{name}-gcc.patch
+Patch2:		%{name}-info.patch
 URL:		http://vmips.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libstdc++-devel
+BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,9 +29,11 @@ C++ i jest rozpowszechniany na licencji GNU GPL.
 
 %prep
 %setup -q
+%patch0 -p1
+%patch1 -p1
+%patch2 -p1
 
 %build
-#%%{__gettextize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
@@ -46,9 +53,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/vmips
+%attr(755,root,root) %{_bindir}/vmipstool
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/vmipsrc
 %{_includedir}/%{name}
 %{_datadir}/%{name}
-%{_mandir}/*/vmips*
-%{_infodir}/vmips*
+%{_mandir}/man1/vmips.1*
+%{_mandir}/man1/vmipstool.1*
+%{_infodir}/vmips.info*
