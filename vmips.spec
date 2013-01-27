@@ -10,6 +10,8 @@ Source0:	http://vmips.sourceforge.net/releases/%{name}-%{version}/vmips-%{versio
 Patch0:		%{name}-am.patch
 Patch1:		%{name}-gcc.patch
 Patch2:		%{name}-info.patch
+Patch3:		%{name}-doc.patch
+Patch4:		%{name}-format.patch
 URL:		http://vmips.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,6 +34,8 @@ C++ i jest rozpowszechniany na licencji GNU GPL.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
+%patch4 -p1
 
 %build
 %{__aclocal}

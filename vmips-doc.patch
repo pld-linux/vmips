@@ -1,0 +1,11 @@
+--- vmips-1.4/doc/Makefile.in.orig	2012-01-30 08:50:23.000000000 +0100
++++ vmips-1.4/doc/Makefile.in	2013-01-27 14:35:01.464075331 +0100
+@@ -54,7 +54,7 @@
+ vmipstool_MANPAGE = vmipstool.$(MANSECT)
+ MANPAGES = $(vmips_MANPAGE) $(vmipstool_MANPAGE)
+ 
+-all: $(DOC) info html man pdf
++all: $(DOC) info man
+ 
+ # Nothing to do here (yet):
+ check installcheck:

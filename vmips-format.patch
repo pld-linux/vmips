@@ -1,0 +1,17 @@
+--- vmips-1.4/error.cc.orig	2004-12-09 09:48:04.000000000 +0100
++++ vmips-1.4/error.cc	2013-01-27 14:32:38.777534402 +0100
+@@ -34,12 +34,12 @@
+ 	assert(fmt);
+ 
+ 	if (pre)
+-		fprintf(file, pre);
++		fputs(pre, file);
+ 	
+ 	vfprintf(file, fmt, ap);
+ 
+ 	if (post)
+-		fprintf(file, post);
++		fputs(post, file);
+ 
+ 	fflush(file);
+ }
