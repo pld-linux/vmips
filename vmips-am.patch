@@ -1,9 +1,9 @@
---- vmips-1.4/configure.in.orig	2010-12-20 02:26:19.000000000 +0100
-+++ vmips-1.4/configure.in	2013-01-27 12:04:13.500356297 +0100
+--- vmips-1.4.1/configure.in.orig	2013-04-29 08:41:15.000000000 +0200
++++ vmips-1.4.1/configure.in	2013-05-15 17:33:59.594115486 +0200
 @@ -5,7 +5,7 @@
  AC_CANONICAL_SYSTEM
  program_prefix=NONE
- AM_INIT_AUTOMAKE(vmips, 1.4)
+ AM_INIT_AUTOMAKE(vmips, 1.4.1)
 -AM_CONFIG_HEADER(config.h)
 +AC_CONFIG_HEADERS(config.h)
  
