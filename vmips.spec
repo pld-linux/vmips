@@ -2,7 +2,7 @@ Summary:	Virtual machine simulator based on a MIPS R3000 processor
 Summary(pl.UTF-8):	Symulator maszyny wirtualnej opartej na procesorze MIPS R3000
 Name:		vmips
 Version:	1.4.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/Emulators
 Source0:	http://vmips.sourceforge.net/releases/%{name}-%{version}/vmips-%{version}.tar.gz
@@ -45,12 +45,17 @@ C++ i jest rozpowszechniany na licencji GNU GPL.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post	-p /sbin/postshell
+-/usr/sbin/fix-info-dir -c %{_infodir}
+
+%postun	-p /sbin/postshell
+-/usr/sbin/fix-info-dir -c %{_infodir}
 
 %files
 %defattr(644,root,root,755)
