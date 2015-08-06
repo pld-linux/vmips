@@ -12,3 +12,23 @@
  @end direntry
  
  @ifinfo
+--- vmips-1.4.1/doc/vmipstool.texi~	2004-10-02 06:18:23.000000000 +0200
++++ vmips-1.4.1/doc/vmipstool.texi	2015-08-06 21:23:36.879622263 +0200
+@@ -1,7 +1,6 @@
+ @c %**start of header
+ @c This is for the man page:
+ @setfilename vmipstool.info
+-@settitle VMIPS front end for common programming tasks.
+ @c %**end of header
+ 
+ @ignore
+--- vmips-1.4.1/doc/invoke.texi~	2004-06-18 11:21:07.000000000 +0200
++++ vmips-1.4.1/doc/invoke.texi	2015-08-06 21:23:48.779628383 +0200
+@@ -1,7 +1,6 @@
+ @c %**start of header
+ @c This is for the man page:
+ @setfilename vmips.info
+-@settitle VMIPS R3000-based MIPS simulator (running and customizing)
+ @c %**end of header
+ 
+ @ignore
