@@ -9,7 +9,6 @@ Source0:	http://vmips.sourceforge.net/releases/%{name}-%{version}/vmips-%{versio
 # Source0-md5:	2508e366445e517a368cb367d8385c87
 Patch0:		%{name}-am.patch
 Patch1:		%{name}-info.patch
-Patch2:		%{name}-doc.patch
 URL:		http://vmips.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,7 +30,6 @@ C++ i jest rozpowszechniany na licencji GNU GPL.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-#patch2 -p1
 
 # don't try to rebuild man pages,
 # upstream does not provide necessary script
