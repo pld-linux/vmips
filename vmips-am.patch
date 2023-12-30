@@ -1,11 +1,11 @@
---- vmips-1.4.1/configure.in.orig	2013-04-29 08:41:15.000000000 +0200
-+++ vmips-1.4.1/configure.in	2013-05-15 17:33:59.594115486 +0200
-@@ -5,7 +5,7 @@
+--- vmips-1.5.1/configure.in.orig	2023-12-30 10:42:14.838444323 +0100
++++ vmips-1.5.1/configure.in	2023-12-30 14:01:50.610232665 +0100
+@@ -5,7 +5,7 @@ dnl Get the canonical and user-supplied
  AC_CANONICAL_SYSTEM
  program_prefix=NONE
- AM_INIT_AUTOMAKE(vmips, 1.5)
+ AM_INIT_AUTOMAKE(vmips, 1.5.1)
 -AM_CONFIG_HEADER(config.h)
-+AC_CONFIG_HEADERS(config.h)
++AC_CONFIG_HEADERS([config.h])
  
  dnl Look for mips tool installation:
  AC_ARG_WITH(mips,

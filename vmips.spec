@@ -1,15 +1,15 @@
 Summary:	Virtual machine simulator based on a MIPS R3000 processor
 Summary(pl.UTF-8):	Symulator maszyny wirtualnej opartej na procesorze MIPS R3000
 Name:		vmips
-Version:	1.5
+Version:	1.5.1
 Release:	1
 License:	GPL v2+
 Group:		Applications/Emulators
-Source0:	http://vmips.sourceforge.net/releases/%{name}-%{version}/vmips-%{version}.tar.gz
-# Source0-md5:	2508e366445e517a368cb367d8385c87
+Source0:	https://vmips.sourceforge.net/releases/%{name}-%{version}/vmips-%{version}.tar.gz
+# Source0-md5:	6bca35762ff282418e9224ebf7d93583
 Patch0:		%{name}-am.patch
 Patch1:		%{name}-info.patch
-URL:		http://vmips.sourceforge.net/
+URL:		https://vmips.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
@@ -45,6 +45,7 @@ touch doc/*.1
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
